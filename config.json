@@ -1,11 +1,9 @@
 {
     "servers": [
         {
-            "host": "localhost",
-            "port": 8000
+            "port": 80
         },
         {
-            "host": "localhost",
             "port": 8443
         }
     ],
