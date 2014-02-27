@@ -1,0 +1,14 @@
+{
+  "name": "mpm",
+  "version": "0.0.0",
+  "description": "use npm.miketown3.com as your npm",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/kappa -c config.json "
+  },
+  "author": "",
+  "license": "none",
+  "dependencies": {
+    "kappa": "~0.14.0"
+  }
+}

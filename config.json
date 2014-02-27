@@ -1,0 +1,21 @@
+{
+    "servers": [
+        {
+            "host": "localhost",
+            "port": 8000
+        },
+        {
+            "host": "localhost",
+            "port": 8443
+        }
+    ],
+    "plugins": {
+        "kappa": {
+            "vhost": "npm.miketown3.com",
+            "paths": [
+                "http://localhost:5984/registry/",
+                "https://registry.npmjs.org/"
+            ]
+        }
+    }
+}
