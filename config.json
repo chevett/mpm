@@ -2,16 +2,13 @@
     "servers": [
         {
             "port": 80
-        },
-        {
-            "port": 8443
         }
     ],
     "plugins": {
         "kappa": {
             "vhost": "npm.miketown3.com",
             "paths": [
-                "http://localhost:5984/registry/",
+                "http://admin:password@localhost:5984/registry/_design/app/_rewrite",
                 "https://registry.npmjs.org/"
             ]
         }
