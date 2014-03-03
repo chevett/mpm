@@ -8,7 +8,7 @@
         "kappa": {
             "vhost": "npm.miketown3.com",
             "paths": [
-                "http://admin:password@localhost:5984/registry/_design/app/_rewrite",
+                "http://localhost:5984/registry/_design/app/_rewrite/",
                 "https://registry.npmjs.org/"
             ]
         }
