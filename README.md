@@ -10,7 +10,7 @@ create self signed cert
 ```
 openssl genrsa -out ~/.mpm/server.key 2048 && \
 openssl req -new -key ~/.mpm/server.key -out ~/.mpm/server.csr && \
-openssl x509 -req -days 999 -in ~/.mpm/server.csr -signkey ~/.mpm/sserver.key -out ~/.mpm/server.crt
+openssl x509 -req -days 999 -in ~/.mpm/server.csr -signkey ~/.mpm/server.key -out ~/.mpm/server.crt
 ```
 create a password file for nginx basic auth
 ```
