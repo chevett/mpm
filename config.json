@@ -2,7 +2,15 @@
     "servers": [
         {
             "port": 80
+        },
+        {
+            "port": 443,
+	    "tls": {
+                "key": "file:./key.pem",
+                "cert": "file:./cert.pem"
+            }
         }
+
     ],
     "plugins": {
         "kappa": {
