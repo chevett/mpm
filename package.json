@@ -4,12 +4,12 @@
   "description": "use npm.miketown3.com as your npm",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/kappa -c config.json ",
-    "bg": "nohup sudo ./node_modules/.bin/kappa -c config.json& "
+    "start": "sudo ./node_modules/.bin/kappa -c config.json ",
+    "prod": "nohup sudo ./node_modules/.bin/kappa -c config.json& "
   },
   "author": "",
   "license": "none",
   "dependencies": {
-    "kappa": "git://github.com/paypal/kappa#d11d69a"
+    "kappa": "^0.14.3"
   }
 }
