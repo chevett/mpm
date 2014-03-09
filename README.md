@@ -30,11 +30,15 @@ cd mpm
 npm install
 npm run create-database
 ```
+
+- start kappa from the mpm repo directory
+```
+npm run prod
+```
+
+- sym link the nginx conf, etc
  
-```
-run the node app on port 3000
-run nginx on port 80.  nginx-mpm.config is configured for basic auth, ssl and proxying to localhost:3000
-```
+
 
 
 
