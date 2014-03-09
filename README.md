@@ -45,7 +45,6 @@ npm run prod
 ##Client
 ```
 npm config set strict-ssl false
-npm config set always-auth true
 ```
 
 in .bash_profile
