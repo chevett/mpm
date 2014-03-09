@@ -4,9 +4,9 @@
   "description": "use npm.miketown3.com as your npm",
   "main": "index.js",
   "scripts": {
-    "start": "sudo ./node_modules/.bin/kappa -c config.json ",
+    "start": "sudo ./node_modules/.bin/kappa -c kappa.json ",
     "create-database": "./create-db.sh",
-    "prod": "nohup sudo ./node_modules/.bin/kappa -c config.json& "
+    "prod": "nohup sudo ./node_modules/.bin/kappa -c kappa.json& "
   },
   "author": "",
   "license": "none",
