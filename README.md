@@ -5,22 +5,31 @@ Create and consume private modules just like you do with open source modules by 
 
 #Setting it up
 ##Server
-private files can go anywhere, but i put em here
+- install couchdb, node and nginx
+
+- private files can go anywhere, but i put em here
 ```
 mkdir -p ~/.mpm
 ```
 
-create self signed cert
+- create self signed cert
 ```
 openssl genrsa -out ~/.mpm/server.key 2048 && \
 openssl req -new -key ~/.mpm/server.key -out ~/.mpm/server.csr && \
 openssl x509 -req -days 999 -in ~/.mpm/server.csr -signkey ~/.mpm/server.key -out ~/.mpm/server.crt
 ```
-create a password file for nginx basic auth
+- create a password file for nginx basic auth
 ```
 htpasswd -b -c ~/.mpm/passwd username password
 ```
  
+- create the couchdb npm expects (good luck, read create-db.sh)
+```
+git clone http://github.com/chevett/mpm
+cd mpm
+npm install
+npm run create-database
+```
  
 ```
 run the node app on port 3000
@@ -43,7 +52,9 @@ function mpm(){
 
 finally, you're cooking with gas
 ```bash
-# publish your super secret package
+#first
+mpm adduser
+# then publish your super secret package
 mpm publish
 # then later install your super secret package
 mpm install super-secret-package
