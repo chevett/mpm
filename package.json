@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "sudo ./node_modules/.bin/kappa -c config.json ",
+    "create-database": "./create-db.sh",
     "prod": "nohup sudo ./node_modules/.bin/kappa -c config.json& "
   },
   "author": "",
